@@ -1,0 +1,7 @@
+Hello,
+
+You have received the following message from {{ obj.email_address }}.
+
+-------------
+Name: {{ obj.name }}
+Message: {{ obj.message }}

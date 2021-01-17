@@ -1,0 +1,9 @@
+{% if thanks %}
+    <h4>Thank you for contacting us</h4>
+{% else %}
+    <form action="{% url 'contact:index' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endif %}
